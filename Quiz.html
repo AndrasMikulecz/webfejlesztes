@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mikulecz András">
+    <meta name="description" content="Top 5 MAPPA anime weboldal">
+    <link rel="stylesheet" href="mystyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="icon" href="kepek/favicon.png" type="image/x-icon">
+    <title>Top 5 Mappa anime</title>
+</head>
+<body>
+    <header>
+        <h1> TOP 5 MAPPA ANIME</h1>
+    </header>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="index.html">A MAPPA</a></li>
+                <li><a href="Top5.html">Top 5</a></li>
+                <li><a href="Felmeres.html">Kérdőív</a></li>
+                <li><a class="active" href="#">Quiz</a></li>
+                <li><a href="kepek.html">Akcióképek</a></li>
+            </ul>
+        </nav>
+        <article>
+            <p class="kozep">Ha még nem láttad a Top 5 animét, akkor válaszolj a kérdésekre és tudd meg melyikkel kezdd!</p>
+        </article>
+        <form>
+        <article class="quiz">
+            <p class="quiz">1.Válaszd ki amelyik a legközelebb áll hozzád!</p>
+            <label><input type="radio" name="tema" id="csata">Csata/háború</label><br>
+            <label><input type="radio" name="tema" id="harcok">Harcok</label><br>
+            <label><input type="radio" name="tema" id="termfeletti">Természetfeletti</label><br>
+            <label><input type="radio" name="tema" id="sport">Küzdősport</label><br>
+            <label><input type="radio" name="tema" id="tortenelem">Történelem</label>
+        </article>
+        <article class="quiz">
+            <p class="quiz">2.Melyik szín tetszik a legjobban?</p>
+                <label><img src="kepek/kek.jpg" alt="Kék szín" class="quiz">
+                <input type="radio" name="szin" id="kek"></label>
+
+                <label><img src="kepek/barna.png" alt="Barna szín" class="quiz">
+                <input type="radio" name="szin" id="barna"></label>
+
+                <label><img src="kepek/sarga.png" alt="Sárga szín" class="quiz">
+                <input type="radio" name="szin" id="sarga"></label>
+
+                <label><img src="kepek/piros.jpg" alt="Piros szín" class="quiz">
+                <input type="radio" name="szin" id="piros"></label>
+
+                <label><img src="kepek/szurke.jpg" alt="Szürke szín" class="quiz">
+                <input type="radio" name="szin" id="szurke"></label>
+        </article>
+        <article class="quiz">
+            <p class="quiz">
+            <label>3.Válassz egy ételt!<br>
+                <select size="1" name="etel" id="EtelLista">
+                    <option disabled selected>Válassz!</option>
+                    <option value="pizza">Pizza</option>
+                    <option value="edesseg">Édességek</option>
+                    <option value="spaghetti">Spaghetti</option>
+                    <option value="husleves">Húsleves</option>
+                    <option value="sushi">Sushi</option>
+                </select>
+            </label>
+            </p>
+        </article>
+        <article class="quiz">
+            <p class="quiz">
+            <label>4.Válassz egy állatot!<br>
+                <select size="1" name="allat" id="AllatLista">
+                    <option disabled selected>Válassz!</option>
+                    <option value="kutya">Kutya</option>
+                    <option value="macska">Macska</option>
+                    <option value="medve">Medve</option>
+                    <option value="roka">Róka</option>
+                    <option value="panda">Panda</option>
+                </select>
+            </label>
+            </p>
+        </article>
+        <article class="quiz">
+            <p class="quiz">
+            <label>5.Válassz egy alakzatot!<br>
+                <select size="1" name="alakzat" id="AlakzatLista">
+                    <option disabled selected>Válassz!</option>
+                    <option value="kor">Kör</option>
+                    <option value="negyzet">Négyzet</option>
+                    <option value="teglalap">Téglalap</option>
+                    <option value="haromszog">Háromszög</option>
+                    <option value="rombusz">Rombusz</option>
+                </select>
+            </label>
+            </p>
+        </article>
+        <input class="myButton" type="button" name="kuldes" value="Küldés" id="vegeredmeny">
+        <input class="myButton" type="reset" name="torles" value="Törlés">
+        <article class="quiz">
+        <h3 id="elsoanime">...</h3>
+        </article>
+    
+    <input class="myButton" type="button" id="SzerencseGomb" name="porgetes" value="Pörgetés">
+    <article>
+        <h3 id="PorgetAnime">...</h3>
+    </article>
+    </form>
+    
+    </div>
+        <script src="index.js"></script>
+    <footer>
+        A kitöltés nem kötelező!
+        <p class="piros">Az oldal beadandónak készült, nem valós!!!</p>
+    </footer>
+</body>
+</html>

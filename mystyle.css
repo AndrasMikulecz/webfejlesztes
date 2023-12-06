@@ -1,0 +1,313 @@
+/*====ALTALANOS====*/
+
+* {
+    box-sizing: border-box; 
+ }
+ 
+ html {
+     padding: 0px;
+     margin: 0px;
+ }
+ 
+ body {
+     background: linear-gradient(rgb(170, 227, 250), rgb(86, 181, 249));
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     padding: 0px;
+     margin: 0px;
+     font-family: sans-serif;
+ }
+ 
+ .container {
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     justify-content: center;
+    
+ }
+ 
+ .container>*{
+     margin: 1%;
+     height: fit-content;
+ }
+
+ /*====MENU====*/
+
+nav {
+    padding: 0px 0px;
+    flex: 1 1 100%;
+    
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+nav ul li {
+    padding: 3px;
+}
+nav li a {
+    display: block;
+    padding: 5px;
+    margin-bottom: 12px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(122, 124, 127);
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Playfair Display";
+    font-size: 18px;
+    font-weight: bold;
+    border: solid 2px rgb(63, 63, 71);
+}
+
+nav ul li a.active {
+    background-color: rgb(5, 76, 208);
+    border: solid 2px rgb(2, 56, 157);
+}
+
+nav li a:hover {
+    background-color: rgb(85, 176, 251);
+    transform: scale(1.15);
+    border: solid 2px rgb(46, 153, 241);
+}
+
+/*====TAGEK====*/
+
+header {
+    background-color:  rgb(126, 200, 253);
+    padding: 1px;
+    margin: 0px;
+    text-align: center;
+    font-family: "Playfair Display";
+    font-size: 22px;
+    color: #4e4e4e;
+    border-bottom: solid 4px #4e4e4e;
+}
+article {
+    background-color:rgba(25, 18, 124, 0.1);
+    padding: 0px 8px;
+    color: #000000;
+    text-align: justify;
+    flex: 1 1 100%;
+    border-radius: 5px;
+    border: solid 1px #1a6997;
+}
+article.anime {
+    background-color:rgba(194, 193, 207, 0.50);
+    border-radius: 20px;
+}
+article.galleria {
+    padding: 0;
+    text-align: justify;
+    flex: 1 1 100%;
+    border-radius: 0;
+    border: 0;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 2%;
+
+}
+img:hover {
+    transform: scale(1.2)
+}
+img {
+    transition: 1s;
+    border: solid 1px black;
+}
+img.mappa {
+    height: 150px;
+    float: right;
+    margin-top: 8px;
+    margin-left: 5px;
+    margin-bottom: 3px;
+}
+img.anime {
+    float: right;
+    height: 150px;
+    margin-top: 8px;
+    margin-left: 5px;
+    margin-bottom: 3px;
+}
+img.cm {
+    height: 350px;
+    float: right;
+    margin-left: 6px;
+    margin-top: 8px;
+    margin-bottom: 5px;
+}
+img.top5 {
+    float: right;
+    margin-left: 6px;
+    margin-top: 8px;
+    margin-bottom: 5px;
+}
+img.jobbra {
+    float: right;
+    margin-left: 6px;
+    margin-top: 8px;
+    margin-bottom: 5px;
+}
+p {
+    margin-right: 15px;
+    text-align: left;
+}
+p.kozep{
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+}
+p.piros {
+    color: red;
+    text-align: center;
+}
+h2, h3 {
+    text-align: left;
+    font-weight: bold;
+}
+h4 {
+    text-align: center;
+    flex-basis: 100%;
+}
+footer{
+    background-color: rgb(203, 203, 206, 0.8);
+    text-align: center;
+    padding: 3px;
+    flex-basis: 100%;
+    font-weight: bold;
+}
+img.quiz{
+    height: 180px;
+    width: 180px;
+    margin: 2px;
+}
+p.quiz {
+    margin-top: 2px;
+    margin-bottom: 5px;
+}
+article.quiz {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+article.kerdoiv {
+    margin-top: 5px;
+    background-color: rgba(152, 253, 255, 0.1)
+}
+input.myButton {
+    background-color:  rgb(152, 212, 255);
+    font-size: 1.1em;
+    padding: 4px;
+    margin: 5px;
+    border-color:#a8dfff;
+}
+input.myButton:hover {
+    transform: scale(1.1)
+}
+
+@media all and (min-width: 600px) {
+    /*tablet*/
+
+    nav {
+        flex-basis: 100%;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    nav li {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    nav ul li a {
+        font-size: 20px;
+        padding: 10px;
+    }
+    img.cm {
+        float: left;
+        margin-left: 0px;
+        margin-top: 3px;
+        margin-bottom: 3px;
+        margin-right: 18px;
+    }
+    img.top5 {
+        float: left;
+        margin-left: 0px;
+        margin-top: 3px;
+        margin-bottom: 3px;
+        margin-right: 18px;
+    }
+    img.jobbra {
+        float: right;
+        margin-left: 18px;
+        margin-top: 3px;
+        margin-bottom: 3px;
+        margin-right: 0px;
+    }
+    img.mappa {
+        height: 200px;
+    }
+    img.anime {
+        height: 200px;
+    }
+    
+}
+
+@media all and (min-width: 768px) {
+    /*számítógép*/
+
+    nav {
+        flex-basis: 100%;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    nav ul li a {
+        font-size: 20px;
+        padding: 10px;
+    }
+    img.cm {
+        float: left;
+        margin-left: 0px;
+        margin-top: 3px;
+        margin-bottom: 3px;
+        margin-right: 18px;
+    }
+    img.top5 {
+        float: left;
+        margin-left: 0px;
+        margin-top: 3px;
+        margin-bottom: 3px;
+        margin-right: 18px;
+    }
+    img.jobbra {
+        float: right;
+        margin-left: 18px;
+        margin-top: 3px;
+        margin-bottom: 3px;
+        margin-right: 0px;
+    }
+    img.mappa {
+        height: 200px;
+    }
+    img.anime {
+        height: 200px;
+    }
+    article.balra{
+        margin-right: 10%;
+        border-radius: 5px;
+    }
+    article.jobbra {
+        margin-left: 10%;
+        border-radius: 5px;
+    }
+    
+}

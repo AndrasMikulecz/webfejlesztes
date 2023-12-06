@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mikulecz András">
+    <meta name="description" content="Top 5 MAPPA anime weboldal">
+    <link rel="stylesheet" href="mystyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="icon" href="kepek/favicon.png" type="image/x-icon">
+    <title>Top 5 Mappa anime</title>
+    <script src="jquery-3.7.1.js"></script>
+    <script src="jquery-validation-1.19.5/dist/jquery.validate.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#myform").validate({
+            rules: {
+                        Fnev: "required",
+                        jelszo: {
+                            required: true,
+                            minlength: 8
+                        },
+                        email: {
+                            required: true,
+                            email: true
+                        },
+                        darab: "required",
+                        ev: "required",
+                        szuletes:"required",
+                        kedvenc: "required",
+                        
+                    },
+            messages: {
+                        Fnev: "Írd be a felhasználóneved!",
+                        jelszo: {
+                            required: "Írd be a jelszavad!",
+                            minlength: "A jelszavad legalább 8 karakterből álljon!"
+                        },
+                        email: " Valós email címet adj meg!",
+                        darab: " Adj meg egy darabszámot!",
+                        ev: " Adj meg egy évszámot!",
+                        szuletes: " Add meg a születési dátumod!",
+                        kedvenc: " Válaszd ki a kedvenced!",
+
+                    },
+
+            });
+        });
+    </script>
+    <style>
+        label.error {
+            color: rgb(208, 5, 5);
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1> TOP 5 MAPPA ANIME</h1>
+    </header>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="index.html">A MAPPA</a></li>
+                <li><a href="Top5.html">Top 5</a></li>
+                <li><a class="active" href="#">Kérdőív</a></li>
+                <li><a href="Quiz.html">Quiz</a></li>
+                <li><a href="kepek.html">Akcióképek</a></li>
+            </ul>
+        </nav>
+        <h4>Milyen kapcsolatod van az animékkel?</h4>
+        <form action="http://szamtud.uni-corvinus.hu/receive.php" method="post" id="myform" novalidate>
+            <article>
+                <p>
+                    <label>Add meg a felhasználó neved:<br>
+                    <input type="text" name="Fnev" size="30" id="Fnev"></label>
+                </p>
+                <p>
+                    <label>Add meg a jelszavad:<br>
+                    <input type="password" name="jelszo" size="30" id="jelszo"></label>
+                </p>
+                <p>
+                    <label>Add meg az e-mail címed:<br>
+                    <input type="text" name="email" size="30" id="email"></label>
+                </p>
+            </article>
+            
+            <p>
+                <label for="hallott">Hallottál már korábban a MAPPA-ról?</label>
+            </p>
+            <p>
+                <label><input type="radio" name="hallott" value="Igen" id="hallott">Igen</label>
+            </p>
+            <p>
+                <label><input type="radio" name="hallott" value="Nem">Nem</label>
+            </p>
+            <p>
+                <label for="latott">Láttál már animét?</label>
+            </p>
+            <p>
+                <label><input type="radio" name="latott" value="Igen" id="latott">Igen</label>
+            </p>
+            <p>
+                <label><input type="radio" name="latott" value="Nem">Nem</label>
+            </p>
+            <p>
+                <label>Mi volt az első animéd?<br>
+                <input type="text" name="elso" placeholder="Írja ide a címét" size="30" id="elso"></label>
+            </p>
+            <p>
+                <label for="olvasott">Olvastál már mangát?</label>
+            </p>
+            <p>
+                <label><input type="radio" name="olvasott" value="Igen" id="olvasott">Igen</label>
+            </p>
+            <p>
+                <label><input type="radio" name="olvasott" value="Nem">Nem</label>
+            </p>
+            <p>
+                <label>Összesen hány animét láttál már?<br>
+                <input type="number" name="darab" min="0" max="100" step="1"></label>
+            </p>
+            <p>
+                <label>Hány évesen láttad az első animédet?<br>
+                <input type="number" name="ev" min="0" max="100" step="1" id="ev"></label>
+            </p>
+            <p>
+                <label>Add meg a születési dátumod:<br>
+                <input type="date" name="szuletes" id="szuletes"></label>
+            </p>
+            <p>
+                <label>Melyik a kedvenced az 5 anime közül?<br>
+                    <select size="1" name="kedvenc">
+                        <option disabled selected>Válassz!</option>
+                        <option value="1">Shingeki no Kyojin</option>
+                        <option value="2">Vinland Saga</option>
+                        <option value="3">Fighting Spirit: Rising</option>
+                        <option value="4">Jujutsu Kaisen</option>
+                        <option value="5">Chainsav Man</option>
+                    </select>
+                </label>
+            </p>
+            <p>
+                <label>Melyiket láttad a Top 5 anime közül?<br>
+                    <input type="checkbox" name="anime0" value="ON">Mindegyiket</label><br>
+                    <label><input type="checkbox" name="anime1" value="ON">Shingeki no Kyojin</label><br>
+                    <label><input type="checkbox" name="anime2" value="ON">Vinland Saga</label><br>
+                    <label><input type="checkbox" name="anime3" value="ON">Fighting Spirit: Rising</label><br>
+                    <label><input type="checkbox" name="anime4" value="ON">Jujutsu Kaisen</label><br>
+                    <label><input type="checkbox" name="anime5" value="ON">Chainsav Man</label><br>
+                    <label><input type="checkbox" name="anime6" value="ON">Egyiket sem</label><br>
+            </p>
+            <p>
+                <label for="ismeros">Van ismerősöd aki néz animét?</label>
+            </p>
+            <p>
+                <label><input type="radio" name="ismeros" value="Igen" id="ismeros">Igen</label>
+            </p>
+            <p>
+                <label><input type="radio" name="ismeros" value="Nem">Nem</label>
+            </p>
+            <p>
+                <label>Mi a véleményed az animéről?<br>
+                <textarea name="velemeny" rows="6" cols="35" id="animevelemeny">
+                </textarea></label>
+            </p>
+            <p>
+                <label>Mennyire szereted a MAPPA animéket?<br>
+                1<input type="range" name="skala" min="1" max="10" step="1" id="szereti">10</label>
+            </p>
+            
+            <p class="kozep"><input class="myButton" type="submit" name="bekuld" value="Beküldés"><input class="myButton" type="reset" name="visszaallit"
+                    value="Visszaállít"></p>
+        </form>
+        <footer>
+            A kitöltés nem kötelező!
+            <p class="piros">Az oldal beadandónak készült, nem valós!!!</p>
+        </footer>
+    </div>
+</body>
+
+</html>
