@@ -1,6 +1,7 @@
 Készítő: Mikulecz András Ágoston
 
-Weboldal URL-je: https://github.com/AndrasMikulecz/webfejlesztes.git
+Weboldal URL-je: https://andrasmikulecz.github.io/webfejlesztes/
+		(depository) https://github.com/AndrasMikulecz/webfejlesztes.git
 
 Téma: A weboldal a MAPPA stúdió első 5 legnépszerűbb animéjét mutatja be, majd egy kérdőív és a végén egy quiz során megtudhatod, hogy ha még nem láttad a top 5 anime közül egyiket sem, melyik illik hozzád legjobban. ;)
 
